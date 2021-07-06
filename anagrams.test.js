@@ -1,5 +1,5 @@
 const File = require('./index.js')
-
+const{AreAnagrams} = require('./index.js');
 
 
 describe("Anagrams Test", () => {
@@ -11,5 +11,9 @@ describe("Anagrams Test", () => {
 
     })
 
+    it("Verify that there are anagrams", () => {
+        const array = ["fresa","frase", "hola", "adios"];
+        expect(File.AreAnagrams2(array)).toBe(true);
+    })
 
 })
