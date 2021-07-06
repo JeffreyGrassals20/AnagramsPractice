@@ -26,5 +26,13 @@ const File = module.exports = {
         return anagrams
     },
 
+    CountAnagrams: (anagrams) => {
+        var count = 0;
+        for(let v of anagrams.values())
+
+            if(v.length > 1) count++
+        
+        return count
+    },
  
 }

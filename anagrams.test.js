@@ -16,4 +16,9 @@ describe("Anagrams Test", () => {
         expect(File.AreAnagrams2(array)).toBe(true);
     })
 
+    it("Verify if amount of anagrams is 1", () => {
+        const array = ["fresa","frase", "hola", "adios"];
+        expect(File.CountAnagrams(File.AreAnagrams2())).toBe(20683)
+    })
+
 })
