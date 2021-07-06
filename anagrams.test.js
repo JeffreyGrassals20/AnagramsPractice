@@ -21,4 +21,10 @@ describe("Anagrams Test", () => {
         expect(File.CountAnagrams(File.AreAnagrams2())).toBe(20683)
     })
 
+    it("Check if time is less than 2 seconds", () => {
+        const array = ["fresa","frase", "hola", "adios"];
+        expect(File.AnagramsDuration()).toBeLessThan(2000)
+
+    })
+
 })
